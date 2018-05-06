@@ -1,4 +1,4 @@
-# im
+# vue XMPP openfire strophe.js layim
 
 > im
 
