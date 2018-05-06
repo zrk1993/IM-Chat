@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Strophe.js Echobot Example</title>
+  <script language='javascript'	  type='text/javascript'  src='./js/jquery.min.js'></script>
+<!--   <script language='javascript'	  type='text/javascript'  src='./js/b64.js'></script>
+  <script language='javascript'	  type='text/javascript'  src='./js/md5.js'></script>
+  <script language='javascript'	  type='text/javascript'  src='./js/sha1.js'></script> -->
+  <script language='javascript'	  type='text/javascript'  src='./js/strophe.js'></script>
+  <script language='javascript'	  type='text/javascript'  src='./js/main.js'></script>
+  <style>
+
+    body {font-size:9pt}
+
+    #his {width:700px; height:200px;overflow:auto; border: 1px dashed #000000;}
+
+    .editbox,input[type="text"],input[type="password"] {
+    background: #ffffff;
+    border: 1px solid #b7b7b7;
+    color: #003366;
+    cursor: text;
+    font-family: "arial";
+    font-size: 9pt;
+    height: 18px;
+    padding: 1px;
+    }
+
+    .multibox {
+    background: #f8f8f8;
+    border-bottom: #B7B7B7 1px solid;
+    border-left: #B7B7B7 1px solid;
+    border-right: #B7B7B7 1px solid;
+    border-top: #B7B7B7 1px solid;
+    color: #000000;
+    cursor: text;
+    font-family: "Arial";
+    font-size: 9pt;
+    padding: 1px;
+    }
+
+  </style>
+</head>
+<body>
+  <p></p>
+  <div id='login'>
+    <form name='cred'>
+      <label for='jid'>JID:</label>
+      <input type='text' id='jid' value="@example.com" />
+      <label for='pass'>Password:</label>
+      <input type='text' id='pass' value="123456"/>
+      <input type='button' id='connect' value='connect' />
+    </form>
+  </div>
+  <p></p>
+
+  <div id="his">
+  </div>
+
+  <p></p>
+  <div id="inputarea">
+    <label for='tojid'>TOJID:</label>
+    <input type='text' id='tojid' value="zrk@51macf.com"/>
+    <br/>
+      <textarea id="msg" rows="3" cols="120" class="multibox"></textarea>
+      <input type="button" id="send" value="send" />
+      <input type="button" id="add" value="add" />
+  </div>
+  <hr />
+  <div id='log'></div>
+</body>
+</html>
