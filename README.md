@@ -1,6 +1,7 @@
 # vue XMPP openfire strophe.js layim
 
-> im
+[Openfire](https://www.igniterealtime.org/index.jsp)
+
 
 ## Build Setup
 
